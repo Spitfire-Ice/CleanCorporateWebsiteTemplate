@@ -1,0 +1,28 @@
+.header--button {
+  font-family: $montserrat;
+  font-size: 18px;
+  letter-spacing:1.35px;
+  color: rgba(255,255,255,1);
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+}
+.portfolio--button {
+  border-radius: 5px;
+  background-color: rgb(38, 175, 95);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 190px;
+  height: 55px;
+  font-family: $montserrat;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+  margin-top: 85px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.portfolio--button:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}

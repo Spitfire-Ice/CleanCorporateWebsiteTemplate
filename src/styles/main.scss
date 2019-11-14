@@ -6,4 +6,10 @@
 @import "~swiper/css/swiper.min.css";
 
 @import "header";
+@import "services";
+@import "portfolio";
 
+
+html {
+  overflow-x: hidden;
+}
