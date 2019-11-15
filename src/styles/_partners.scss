@@ -1,0 +1,42 @@
+.partners {
+  width: 100%;
+  min-height: 205px;
+  padding-top: 70px;
+}
+.partners--items {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.partners--item {
+  margin: 50px 65px;
+  position: relative;
+  img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  img:nth-child(2) {
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+.partners--item:hover img:nth-child(2) {
+  opacity: 1;
+  transition: 1s;
+}
+.partners--item:hover img:nth-child(1) {
+  opacity: 0;
+  transition: 1s;
+}
+.partners--item:hover {
+  cursor: pointer;
+}
