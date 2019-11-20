@@ -1,0 +1,100 @@
+.contacts {
+ width: 100%;
+ min-height: 703px;
+ background: url("../img/contact--bg-553.png") no-repeat center;
+ background-size: cover;
+}
+.contacts-wrapper {
+ max-width: 1200px;
+ width: 100%;
+ margin: 0 auto;
+}
+form {
+ border: 1px solid red;
+ max-width: 570px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ h4 {
+  font-size: 35.667px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: $montserrat;
+  margin-bottom: 100px;
+ }
+ .nameForm-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  input {
+   width: 270px;
+   border:none;
+   background-image:none;
+   background-color:transparent;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   border-bottom: 2px solid rgba(169,169,169,1);
+   font-family: $montserrat;
+   font-size: 20px;
+   color: rgba(255,255,255,1);
+  }
+  input::placeholder {
+   color: rgba(255,255,255,0.5);
+  }
+  input[name="name"] {
+   background-image: url("../img/nameIcon.png");
+   background-repeat: no-repeat;
+   text-indent: 25px;
+  }
+  input[name="email"] {
+   background-image: url("../img/emailIcon.png");
+   background-repeat: no-repeat;
+   text-indent: 30px;
+  }
+  input:focus {
+   border:none;
+   background-color:transparent;
+   -webkit-box-shadow: none;
+   -moz-box-shadow: none;
+   box-shadow: none;
+   outline: none;
+  }
+ }
+}
+textarea {
+ border:none;
+ background-image:none;
+ background-color:transparent;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ box-shadow: none;
+ border-bottom: 2px solid rgba(169,169,169,1);
+ font-family: $montserrat;
+ font-size: 20px;
+ color: rgba(255,255,255,1);
+ background-image: url("../img/messageIcon.png");
+ background-repeat: no-repeat;
+ text-indent: 30px;
+ margin-bottom: 50px;
+}
+textarea::placeholder {
+ color: rgba(255,255,255,0.5);
+}
+input[type="submit"] {
+ width: 176px;
+ height: 53px;
+ border-radius: 3px;
+ color: rgba(38,175,95,1);
+ background-color: rgba(255,255,255,1);
+ text-transform: uppercase;
+ font-family: $montserrat;
+ font-weight: bold;
+ font-size: 18.13px;
+}
