@@ -1,0 +1,51 @@
+footer {
+ min-height: 359px;
+ width: 100%;
+ padding-top: 95px;
+}
+.footer--socialNetworks {
+ min-height: 214px;
+ width: 100%;
+ background-color: rgba(255,255,255,1);
+ h3 {
+  font-family: $montserrat;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing:3.75px;
+  color: rgba(0,0,0,0.8);
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+ }
+ .footer--socialIcons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  img {
+   margin: 25px 15px;
+   cursor: pointer;
+   transition: 0.5s;
+  }
+  img:hover {
+   transform: scale(2);
+   transition: 1.2s;
+  }
+ }
+}
+.copyrightNotice {
+ width: 100%;
+ min-height: 125px;
+ background-color: rgba(60,60,60,1);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ p {
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing:0.16px;
+  color: rgba(255,255,255,0.8);
+ }
+}
+
