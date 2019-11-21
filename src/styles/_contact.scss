@@ -29,7 +29,7 @@ form {
   color: rgba(255, 255, 255, 0.8);
   font-family: $montserrat;
   margin-bottom: 100px;
-  margin-top: 40px;
+  margin-top: 0;
  }
  .nameForm-wrapper {
   width: 100%;
@@ -92,6 +92,9 @@ textarea {
 }
 textarea::placeholder {
  color: rgba(255,255,255,0.5);
+}
+textarea:focus {
+ outline: none;
 }
 input[type="submit"] {
  width: 176px;
