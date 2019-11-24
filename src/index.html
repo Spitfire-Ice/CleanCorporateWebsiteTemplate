@@ -5,6 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is an example of a meta description. This will often show up in search
+  results.">
     <title>Site</title>
 </head>
 <body id="home">
@@ -26,14 +28,21 @@
       </div>
     </div>
     <nav class="nav" id="nav">
-      <a href="#" class="logo">
-        <h1>LO<br>GO</h1>
-      </a>
-      <ul class="menu">
-        <li class="menu--item"><a href="#home">home</a></li>
-        <li class="menu--item"><a href="#services">services</a></li>
-        <li class="menu--item"><a href="#portfolio">portfolio</a></li>
-        <li class="menu--item"><a href="#contacts">contacts</a></li>
+      <div class="logo">
+        <a href="#">
+          <h1>LO<br>GO</h1>
+        </a>
+      </div>
+      <div class="menu__mobile-button" id="mobileButton" onclick="menuToggleAction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <ul class="menu" id="navigation" onclick="menuToggleAction(this)">
+        <li class="menu--item"><a data-scroll href="#home">home</a></li>
+        <li class="menu--item"><a data-scroll href="#services">services</a></li>
+        <li class="menu--item"><a data-scroll href="#portfolio">portfolio</a></li>
+        <li class="menu--item"><a data-scroll href="#contacts">contacts</a></li>
       </ul>
     </nav>
     <div class="header--content">
@@ -62,7 +71,7 @@
             suffered alteration.</p>
         </div>
         <div class="services--item">
-          <img src="./img/item--icon-00529.png" alt="icon" width="45" height="45">
+          <img src="./img/item--icon-00529.png" alt="icon" width="55" height="45">
           <h3>software development</h3>
           <p>There are many variations of passages of Lorem Ipsum available, but the majority have
             suffered alteration.</p>
@@ -253,10 +262,13 @@
         <form action="">
           <h4>Don’t be shy, Say Hello! </h4>
           <div class="nameForm-wrapper">
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="email" placeholder="Email">
+            <label for="name"></label>
+            <input type="text" name="name" placeholder="Name" id="name">
+            <label for="emal"></label>
+            <input type="text" name="email" placeholder="Email" id="emal">
           </div>
-          <textarea name="message" cols="10" rows="3" placeholder="Message"></textarea>
+          <label for="message"></label>
+          <textarea name="message" cols="10" rows="3" placeholder="Message" id="message"></textarea>
           <input type="submit" value="send">
         </form>
         <div class="contacts--address">
@@ -285,7 +297,7 @@
       <h3>GO BUSINESS</h3>
       <div class="footer--socialIcons">
         <img src="./img/socialNetwork/1.png" alt="icon" height="16" width="15">
-        <img src="./img/socialNetwork/2.png" alt="icon" height="16" width="9">
+        <img src="./img/socialNetwork/2.png" alt="icon" height="16" width="8">
         <img src="./img/socialNetwork/3.png" alt="icon" height="13" width="15">
         <img src="./img/socialNetwork/4.png" alt="icon" height="13" width="12">
         <img src="./img/socialNetwork/5.png" alt="icon" height="16" width="12">
@@ -296,5 +308,6 @@
       <p>© 2019 Vladyslav Ice All Rights Reserved</p>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 </body>
 </html>

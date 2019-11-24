@@ -13,3 +13,7 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 
 });
+
+
+
+var scroll = new SmoothScroll('a[href*="#"]');
